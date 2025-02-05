@@ -33,16 +33,6 @@ public class Controller {
 
     @FXML
     void handleButtonAction() {
-//        try {
-//            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ACWindow.fxml"));
-//            Parent root1 = fxmlLoader.load();
-//            Stage stage = new Stage();
-//            stage.setTitle("Second WINDOW");
-//            stage.setScene(new Scene(root1, 300, 275));
-//            stage.show();
-//        } catch (Exception e) {
-//            e.printStackTrace();  // Print stack trace for debugging
-//        }
     	Label newTitle = new Label("Accumulator Register\n\n");
 		Label newInfo = new Label("Temporarily holds operands and results from ALU operations. The"
 				+ " most significant 40 bits are stored here.");
@@ -56,16 +46,6 @@ public class Controller {
     }
     @FXML
     void handleButtonAction1() {
-//        try {
-//            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MQWindow.fxml"));
-//            Parent root1 = fxmlLoader.load();
-//            Stage stage = new Stage();
-//            stage.setTitle("Third WINDOW for MQ");
-//            stage.setScene(new Scene(root1, 300, 275));
-//            stage.show();
-//        } catch (Exception e) {
-//            e.printStackTrace();  // Print stack trace for debugging
-//        }
     	Label newTitle = new Label("Multiplier Quotient Register\n\n");
 		Label newInfo = new Label("Works alongside the AC. Holds the multiplier during"
 				+ " multiplication, and the quotient during division. Holds the least"
@@ -80,30 +60,22 @@ public class Controller {
     }
     @FXML
     void handleButtonAction2() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ALCircuitWindow.fxml"));
-            Parent root1 = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Fourth WINDOW for AL Circuits");
-            stage.setScene(new Scene(root1, 300, 275));
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();  // Print stack trace for debugging
-        }
+    	Label newTitle = new Label("Arithmatic Logic Circuits\n\n");
+		Label newInfo = new Label("Circuitry inside the ALU that performs calculations."
+				+ " Executes arithmetic functions (add, subtract, multiply, divide) as well as logic"
+				+ " (AND, OR, NOT, XOR) operations. These circuits work with registers (AC, MQ, MBR) to "
+				+ "process data and store results.");
+		
+		infoContainer.getChildren().clear(); 
+
+		newTitle.getStyleClass().add("title-label");
+		newInfo.getStyleClass().add("general-label");
+		infoContainer.getChildren().add(newTitle);
+		infoContainer.getChildren().add(newInfo);
     }
 
         @FXML
         void handleButtonAction3() {
-//            try {
-//                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MBRWindow.fxml"));
-//                Parent root1 = fxmlLoader.load();
-//                Stage stage = new Stage();
-//                stage.setTitle("Fifth WINDOW for MBR");
-//                stage.setScene(new Scene(root1, 300, 275));
-//                stage.show();
-//            } catch (Exception e) {
-//                e.printStackTrace();  // Print stack trace for debugging
-//            }
         	Label newTitle = new Label("Memory Buffer Register\n\n");
     		Label newInfo = new Label("Temporarily holds instructions for data transferred between ALU and main memory."
     				+ " Holds instructions/data fetched from memory before processing, and stores "
@@ -118,42 +90,31 @@ public class Controller {
     }
     @FXML
     void handleButtonAction4() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SixthWindow.fxml"));
-            Parent root1 = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Sixth WINDOW for Input");
-            stage.setScene(new Scene(root1, 300, 275));
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();  // Print stack trace for debugging
-        }
+    	Label newTitle = new Label("Input/Output (I/O)\n\n");
+		Label newInfo = new Label("Handles communication between the IAS computer and external devices.");
+		
+		infoContainer.getChildren().clear(); 
+
+		newTitle.getStyleClass().add("title-label");
+		newInfo.getStyleClass().add("general-label");
+		infoContainer.getChildren().add(newTitle);
+		infoContainer.getChildren().add(newInfo);
     }
     @FXML
     void handleButtonAction5() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ResetWindow.fxml"));
-            Parent root1 = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Seventh WINDOW for Input");
-            stage.setScene(new Scene(root1, 300, 275));
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();  // Print stack trace for debugging
-        }
+    	Label newTitle = new Label("Main Memory\n\n");
+		Label newInfo = new Label("Stores both data and instructions. (Basis of Von Neumann Architecture)."
+				+ " Acts as the central storage unit from which the CPU");
+		
+		infoContainer.getChildren().clear(); 
+
+		newTitle.getStyleClass().add("title-label");
+		newInfo.getStyleClass().add("general-label");
+		infoContainer.getChildren().add(newTitle);
+		infoContainer.getChildren().add(newInfo);
     }
     @FXML
     void handleButtonAction6() {
-//        try {
-//            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("PCWindow.fxml"));
-//            Parent root1 = fxmlLoader.load();
-//            Stage stage = new Stage();
-//            stage.setTitle("Eighth WINDOW for PC");
-//            stage.setScene(new Scene(root1, 300, 275));
-//            stage.show();
-//        } catch (Exception e) {
-//            e.printStackTrace();  // Print stack trace for debugging
-//        }
     	Label newTitle = new Label("Program Counter\n\n");
 		Label newInfo = new Label("Holds/Keeps track of the next instruction to be executed. "
 				+ "Keeps track of where the program is in memory. "
@@ -166,43 +127,23 @@ public class Controller {
 		infoContainer.getChildren().add(newTitle);
 		infoContainer.getChildren().add(newInfo);
     }
-        @FXML
-        void handleButtonAction7() {
-//            try {
-//                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MARWindow.fxml"));
-//                Parent root1 = fxmlLoader.load();
-//                Stage stage = new Stage();
-//                stage.setTitle(" WINDOW for MAR");
-//                stage.setScene(new Scene(root1, 300, 275));
-//                stage.show();
-//            } catch (Exception e) {
-//                e.printStackTrace();  // Print stack trace for debugging
-//            }
-        	Label newTitle = new Label("Memory Address Register\n\n");
-    		Label newInfo = new Label("Stores the memory address where data or an instruction is located. "
-    				+ "Works alongside the PC to fetch instructions from memory. "
-    				+ "It is also used to hold addresses when reading/writing data to memory");
+    @FXML
+    void handleButtonAction7() {
+        Label newTitle = new Label("Memory Address Register\n\n");
+    	Label newInfo = new Label("Stores the memory address where data or an instruction is located. "
+    			+ "Works alongside the PC to fetch instructions from memory. "
+    			+ "It is also used to hold addresses when reading/writing data to memory");
     		
-    		infoContainer.getChildren().clear(); 
+    	infoContainer.getChildren().clear(); 
 
-    		newTitle.getStyleClass().add("title-label");
-    		newInfo.getStyleClass().add("general-label");
-    		infoContainer.getChildren().add(newTitle);
-    		infoContainer.getChildren().add(newInfo);
+    	newTitle.getStyleClass().add("title-label");
+    	newInfo.getStyleClass().add("general-label");
+    	infoContainer.getChildren().add(newTitle);
+    	infoContainer.getChildren().add(newInfo);
     }
 
     @FXML
     void handleButtonAction8() {
-//        try {
-//            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("IBRWindow.fxml"));
-//            Parent root1 = fxmlLoader.load();
-//            Stage stage = new Stage();
-//            stage.setTitle(" WINDOW for IBR");
-//            stage.setScene(new Scene(root1, 300, 275));
-//            stage.show();
-//        } catch (Exception e) {
-//            e.printStackTrace();  // Print stack trace for debugging
-//        }
     	Label newTitle = new Label("Instruction Buffer Register\n\n");
 		Label newInfo = new Label("Stores the second instruction (Bits 20-39) from a 40-bit word"
 				+ " retrieved from the MBR. When the IR finishes executing the first instruction, the IBR"
@@ -217,29 +158,19 @@ public class Controller {
     }
     @FXML
     void handleButtonAction9() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ControlCircuitWindow.fxml"));
-            Parent root1 = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle(" WINDOW for Control Circuit window");
-            stage.setScene(new Scene(root1, 300, 275));
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();  // Print stack trace for debugging
-        }
+    	Label newTitle = new Label("Control Circuits\n\n");
+		Label newInfo = new Label("Acts as the 'brain' of the CPU. Coordinates flow between registers, I/O and "
+				+ "main memory.");
+		
+		infoContainer.getChildren().clear(); 
+
+		newTitle.getStyleClass().add("title-label");
+		newInfo.getStyleClass().add("general-label");
+		infoContainer.getChildren().add(newTitle);
+		infoContainer.getChildren().add(newInfo);
     }
     @FXML
     void handleButtonAction10() {
-//        try {
-//            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("IRWindow.fxml"));
-//            Parent root1 = fxmlLoader.load();
-//            Stage stage = new Stage();
-//            stage.setTitle(" WINDOW for IR");
-//            stage.setScene(new Scene(root1, 300, 275));
-//            stage.show();
-//        } catch (Exception e) {
-//            e.printStackTrace();  // Print stack trace for debugging
-//        }
     	Label newTitle = new Label("Instruction Register\n\n");
 		Label newInfo = new Label("Retrieves and stores the first instruction (Bits 0-19) from a 40-bit word retrieved from the MBR. "
 				+ "The IR holds the current instruction being executed.");
