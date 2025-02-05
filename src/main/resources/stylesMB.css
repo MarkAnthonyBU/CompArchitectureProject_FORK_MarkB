@@ -1,0 +1,14 @@
+.general-label {
+    -fx-font-family: "Arial";      /* Set font */
+    -fx-font-size: 16px;           /* Set font size */
+    -fx-text-fill: black;          /* Set text color */
+    -fx-text-alignment: center;         /* Center text */
+    -fx-wrap-text: true;           /* Ensure text wraps */
+}
+.title-label {
+    -fx-font-family: "Arial";      /* Set font */
+    -fx-font-size: 30px;           /* Set font size */
+    -fx-text-fill: black;          /* Set text color */
+    -fx-text-alignment: center;         /* Center text */
+    -fx-wrap-text: true;           /* Ensure text wraps */
+}

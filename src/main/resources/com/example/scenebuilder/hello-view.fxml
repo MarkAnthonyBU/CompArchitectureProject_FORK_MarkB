@@ -78,7 +78,7 @@
          <effect>
             <DropShadow />
          </effect></VBox>
-      <Button fx:id="myTestButton" layoutX="280.0" layoutY="633.0" mnemonicParsing="false" onAction="#updICTestButton" text="TestButton" />
+      <Button fx:id="myTestButton" layoutX="280.0" layoutY="633.0" mnemonicParsing="false" onAction="#updICTestButton" onDragOver="#updICClear" onMouseDragOver="#updICTestButton" text="TestButton" />
       <Text layoutX="280.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Central Processing Unit (CPU)">
          <font>
             <Font name="Arial Bold" size="22.0" />
