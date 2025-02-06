@@ -10,8 +10,8 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Controller {
-	@FXML
-	private Button myTestButton;
+//	@FXML
+//	private Button myTestButton;
 	@FXML
 	private VBox infoContainer;
 	
@@ -19,17 +19,17 @@ public class Controller {
 	void updICClear() {
 		infoContainer.getChildren().clear();
 	}
-	@FXML
-	void updICTestButton() {
-		Label newInfo = new Label("THIS IS INFORMATION FOR THE TEST BUTTON");
-		Label newTitle = new Label("TEST BUTTON\n\n");
-		infoContainer.getChildren().clear(); 
-
-		newTitle.getStyleClass().add("title-label");
-		newInfo.getStyleClass().add("general-label");
-		infoContainer.getChildren().add(newTitle);
-		infoContainer.getChildren().add(newInfo);
-	}
+//	@FXML
+//	void updICTestButton() {
+//		Label newInfo = new Label("THIS IS INFORMATION FOR THE TEST BUTTON");
+//		Label newTitle = new Label("TEST BUTTON\n\n");
+//		infoContainer.getChildren().clear(); 
+//
+//		newTitle.getStyleClass().add("title-label");
+//		newInfo.getStyleClass().add("general-label");
+//		infoContainer.getChildren().add(newTitle);
+//		infoContainer.getChildren().add(newInfo);
+//	}
 
     @FXML
     void handleButtonAction() {
