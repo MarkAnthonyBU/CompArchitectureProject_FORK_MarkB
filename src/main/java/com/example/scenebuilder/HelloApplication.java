@@ -13,7 +13,7 @@ public class HelloApplication extends Application {
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
         primaryStage.setTitle("IAS Computer");
-        primaryStage.setScene(new Scene(root, 900, 800  ));
+        primaryStage.setScene(new Scene(root, 900, 800));
         
         primaryStage.getScene().getStylesheets().add(getClass().getResource("/stylesMB.css").toExternalForm());
         

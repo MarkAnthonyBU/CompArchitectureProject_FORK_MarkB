@@ -1,14 +1,16 @@
 .general-label {
-    -fx-font-family: "Arial";      /* Set font */
-    -fx-font-size: 16px;           /* Set font size */
-    -fx-text-fill: black;          /* Set text color */
-    -fx-text-alignment: center;         /* Center text */
-    -fx-wrap-text: true;           /* Ensure text wraps */
+    -fx-font-family: "Arial";
+    -fx-padding: 0px 10px 0px 10px; 
+    -fx-font-size: 16px;
+    -fx-text-fill: black;         
+    -fx-text-alignment: center;         
+    -fx-wrap-text: true;          
 }
 .title-label {
-    -fx-font-family: "Arial";      /* Set font */
-    -fx-font-size: 30px;           /* Set font size */
-    -fx-text-fill: black;          /* Set text color */
-    -fx-text-alignment: center;         /* Center text */
-    -fx-wrap-text: true;           /* Ensure text wraps */
+    -fx-font-family: "Arial Bold";
+    -fx-padding: 0px 10px 0px 10px; 
+    -fx-font-size: 30px;
+    -fx-text-fill: black;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
 }
